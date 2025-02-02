@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based quiz application with gamification features, built using React and TypeScript. The app fetches quiz data from an API and provides an engaging user experience with a summary of results upon completion.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Start Quiz with multiple-choice questions
 
-## Expanding the ESLint configuration
+Real-time score tracking
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Gamification elements (Progress bar, animations)
 
-- Configure the top-level `parserOptions` property like this:
+Summary of results upon completion
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Responsive and intuitive design
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📦 Tech Stack
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Frontend: React, TypeScript, Tailwind CSS, React Router
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+API Fetching: Axios
+
+State Management: useState, useEffect (React Hooks)
+
+Gamification: Animated UI elements
+
+🔧 Setup & Installation
+
+1. Clone the repository:
+
+git clone https://github.com/your-username/quiz-app.git
+cd quiz-app
+
+2. Install dependencies:
+
+npm install
+
+3. Start the development server:
+
+npm run dev
+
+The app will run at http://localhost:5173/ (Vite default port).
+
+⚡ Usage
+
+Click Start Quiz to begin.
+
+Answer multiple-choice questions.
+
+View your score at the end of the quiz.
+
+Click Play Again to restart the quiz.
+
+🛠 Handling CORS Issues
+
+If you face CORS errors while fetching quiz data, try using a proxy:
+
+npx cors-anywhere --port 8080
+
+Or set up a simple Express server to act as a backend proxy.
+
+📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/f041e724-b07d-45d4-8a1a-2067183435cc)
+![image](https://github.com/user-attachments/assets/f91ad1dc-8738-4bbf-8ca0-672f39453369)
+![image](https://github.com/user-attachments/assets/87e682a8-375c-4e52-be69-de2736cc2419)
+
+🎥 Demo Video
+
+https://github.com/user-attachments/assets/aee20373-23dd-45c6-9a42-e22ca918c15d
+
+📜 License
+
+This project is open-source and available under the MIT License.
+
+📬 Contact
+
+For questions, reach out at your.email@example.com or connect on LinkedIn.
+
